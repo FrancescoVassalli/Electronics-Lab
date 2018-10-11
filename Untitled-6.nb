@@ -1,0 +1,201 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5600,        192]
+NotebookOptionsPosition[      4968,        165]
+NotebookOutlinePosition[      5326,        181]
+CellTagsIndexPosition[      5283,        178]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["KWL 1", "Section",
+ CellChangeTimes->{{3.745071623310803*^9, 3.7450716274039793`*^9}}],
+
+Cell["a)", "Text",
+ CellChangeTimes->{{3.745071843147657*^9, 3.745071843411975*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{"\[DifferentialD]", "f"}], 
+   RowBox[{"\[DifferentialD]", "x"}]], "=", 
+  RowBox[{
+   RowBox[{
+    FractionBox["\[DifferentialD]", 
+     RowBox[{"\[DifferentialD]", "x"}]], 
+    RowBox[{"[", 
+     RowBox[{"f", 
+      RowBox[{"(", 
+       RowBox[{"y", ",", 
+        RowBox[{"y", "'"}], ",", "x"}], ")"}]}], "]"}]}], "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["\[Delta]f", "\[Delta]y"], 
+     SuperscriptBox["y", "'"]}], "+", 
+    RowBox[{
+     FractionBox["\[Delta]f", 
+      SuperscriptBox["\[Delta]y", "'"]], 
+     SuperscriptBox["y", "''"]}], "+", 
+    FractionBox["\[Delta]f", "\[Delta]x"]}]}]}]], "DisplayFormula",
+ CellChangeTimes->{{3.7450716582596817`*^9, 3.745071776221459*^9}}],
+
+Cell["b)", "Text",
+ CellChangeTimes->{{3.74507184776366*^9, 3.745071848131796*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   FractionBox["\[Delta]f", "\[Delta]y"], "=", 
+   RowBox[{
+    FractionBox["\[DifferentialD]", 
+     RowBox[{"\[DifferentialD]", "x"}]], 
+    FractionBox["\[Delta]f", 
+     SuperscriptBox["\[Delta]y", "'"]]}]}], ",", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     FractionBox["\[Delta]f", "\[Delta]y"], 
+     SuperscriptBox["y", "'"]}], "+", 
+    RowBox[{
+     FractionBox["\[Delta]f", 
+      SuperscriptBox["\[Delta]y", "'"]], 
+     SuperscriptBox["y", "''"]}], "+", 
+    FractionBox["\[Delta]f", "\[Delta]x"]}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       FractionBox["\[DifferentialD]", 
+        RowBox[{"\[DifferentialD]", "x"}]], 
+       FractionBox["\[Delta]f", 
+        SuperscriptBox["\[Delta]y", "'"]]}], 
+      SuperscriptBox["y", "'"]}], "+", 
+     RowBox[{
+      FractionBox["\[Delta]f", 
+       SuperscriptBox["\[Delta]y", "'"]], 
+      SuperscriptBox["y", "''"]}], "+", 
+     FractionBox["\[Delta]f", "\[Delta]x"]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        FractionBox["\[DifferentialD]", 
+         RowBox[{"\[DifferentialD]", "x"}]], 
+        FractionBox["\[Delta]f", 
+         SuperscriptBox["\[Delta]y", "'"]]}], 
+       SuperscriptBox["y", "'"]}], "+", 
+      RowBox[{
+       FractionBox["\[Delta]f", 
+        SuperscriptBox["\[Delta]y", "'"]], 
+       RowBox[{
+        FractionBox["\[DifferentialD]", 
+         RowBox[{"\[DifferentialD]", "x"}]], 
+        SuperscriptBox["y", "'"]}]}], "+", 
+      FractionBox["\[Delta]f", "\[Delta]x"]}], "=", 
+     RowBox[{
+      RowBox[{
+       FractionBox["\[DifferentialD]", 
+        RowBox[{"\[DifferentialD]", "x"}]], 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox["\[Delta]f", 
+          SuperscriptBox["\[Delta]y", "'"]], 
+         SuperscriptBox["y", "'"]}], ")"}]}], "+", 
+      FractionBox["\[Delta]f", "\[Delta]x"]}]}]}]}]}]], "DisplayFormula",
+ CellChangeTimes->{{3.745071858099287*^9, 3.745072004094342*^9}, {
+  3.74507528591936*^9, 3.745075472822852*^9}, {3.745075588242799*^9, 
+  3.74507564294812*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["KWL 2", "Section",
+ CellChangeTimes->{{3.745075666172802*^9, 3.745075671299367*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"Log", "[", "x", "]"}], "8"], ",", "x"}], "]"}]], "Code",
+ CellChangeTimes->{{3.7450756805487747`*^9, 3.745075723524147*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"40320", " ", "x"}], "-", 
+  RowBox[{"40320", " ", "x", " ", 
+   RowBox[{"Log", "[", "x", "]"}]}], "+", 
+  RowBox[{"20160", " ", "x", " ", 
+   SuperscriptBox[
+    RowBox[{"Log", "[", "x", "]"}], "2"]}], "-", 
+  RowBox[{"6720", " ", "x", " ", 
+   SuperscriptBox[
+    RowBox[{"Log", "[", "x", "]"}], "3"]}], "+", 
+  RowBox[{"1680", " ", "x", " ", 
+   SuperscriptBox[
+    RowBox[{"Log", "[", "x", "]"}], "4"]}], "-", 
+  RowBox[{"336", " ", "x", " ", 
+   SuperscriptBox[
+    RowBox[{"Log", "[", "x", "]"}], "5"]}], "+", 
+  RowBox[{"56", " ", "x", " ", 
+   SuperscriptBox[
+    RowBox[{"Log", "[", "x", "]"}], "6"]}], "-", 
+  RowBox[{"8", " ", "x", " ", 
+   SuperscriptBox[
+    RowBox[{"Log", "[", "x", "]"}], "7"]}], "+", 
+  RowBox[{"x", " ", 
+   SuperscriptBox[
+    RowBox[{"Log", "[", "x", "]"}], "8"]}]}]], "Output",
+ CellChangeTimes->{3.745075724599021*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 755},
+WindowMargins->{{Automatic, 98}, {26, Automatic}},
+FrontEndVersion->"10.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 10, \
+2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 92, 1, 64, "Section"],
+Cell[675, 25, 84, 1, 30, "Text"],
+Cell[762, 28, 742, 23, 47, "DisplayFormula"],
+Cell[1507, 53, 83, 1, 30, "Text"],
+Cell[1593, 56, 2093, 62, 94, "DisplayFormula"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3723, 123, 90, 1, 64, "Section"],
+Cell[CellGroupData[{
+Cell[3838, 128, 209, 5, 54, "Code"],
+Cell[4050, 135, 890, 26, 52, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
